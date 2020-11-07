@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftQrscanPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "qrscan", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "qr_scan", binaryMessenger: registrar.messenger())
     let instance = SwiftQrscanPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
